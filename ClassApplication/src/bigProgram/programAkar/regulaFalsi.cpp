@@ -1,13 +1,11 @@
-#include "gotoxy-m.h"
-#include <math.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 float f(float);
 
 int main() {
 
 	float check, xl, xr, xo;
-	//float xlt = 0, xrt = 0, xot = 0, fxlt = 0, fxrt = 0, fxot = 0;
 	int k, p;
 
 	do {
@@ -17,7 +15,8 @@ int main() {
 		printf("  Mencari akar dari suatu persamaan kuadrat menggunakan metode regula falsi.\n");
 		printf("\n");
 		printf("  Wafi Azmi Hartono / 1310171041\n");
-		printf("  ---------------------------------------------------------------------\n");
+		printf("  Dosen: Suhariningsih, S.ST., M.T.\n");
+		printf("  ----------------------------------------------------------------------\n");
 		printf("\n");
 		printf("  Persamaan kuadrat: -2X^2 - 6X + 8.\n");
 		printf("\n");
@@ -51,29 +50,16 @@ int main() {
 		printf("  Masukkan jumlah iterasi!\n");
 		printf("  Iterasi = ");
 		scanf("%d", &k);
-		//printf("%d", k++);
 
 		printf("   __________________________________________________________________________________________________________________\n");
 		printf("  | Iterasi |       xl       |       xr       |       xo       |      f(xl)      |      f(xr)      |      f(xo)      |\n");
 		printf("  |---------|----------------|----------------|----------------|-----------------|-----------------|-----------------|\n");
 		for (int i = 1; i <= k; i++) {
-			//xo = (xl + xr) / 2;
-			//temp = (xl * f(xr) - xr * f(xl));
-			//xo = temp / (f(xr) - f(xl));
 			xo = (((xl * f(xr)) - (xr * f(xl))) / (f(xr) - f(xl)));
 			
-			//printf("%s\n", xot == xo ? "same" : "notsame");
 			printf("  | %7d | %14.8f | %14.8f | %14.8f | %15.8f | %15.8f | %15.8f |\n", i, xl, xr, xo, f(xl), f(xr), f(xo));
 
-			/*xlt = xl;
-			xrt = xr;
-			xot = xo;
-			fxlt = f(xl);
-			fxrt = f(xr);
-			fxot = f(xo);*/
-
 			if (f(xo) == 0) {
-				//printf("STOP!\n");
 				i = k;
 			} else {
 				if (f(xl) * f(xo) < 0) {
@@ -102,15 +88,5 @@ int main() {
 }
 
 float f(float x) {
-	//float val = static_cast<float>((-2) * pow(x, 2) - (6 * x) + 8);
-	//float val = ((-2) * pow(x, 2) - (6 * x) + 8);
 	return (((-2) * (x * x)) - (6 * x) + 8);
 }
-
-//experimental
-//int maian() {
-//	float x = 7050;
-//	printf("%18.8f", x);
-//	system("CLS");
-//	return 0;
-//}

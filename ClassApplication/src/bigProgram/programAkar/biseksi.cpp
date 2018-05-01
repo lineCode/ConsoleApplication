@@ -1,6 +1,5 @@
-#include "gotoxy-m.h"
-#include <math.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 float f(float);
 
@@ -13,10 +12,11 @@ int main() {
 		system("CLS");
 
 		printf("  Program Biseksi\n");
-		printf("  Mencari akar dari suatu persamaan kuadrat menggunakan metode biseksi.\n");
+		printf("  Mencari nilai akar dari suatu persamaan kuadrat menggunakan metode biseksi.\n");
 		printf("\n");
 		printf("  Wafi Azmi Hartono / 1310171041\n");
-		printf("  ---------------------------------------------------------------------\n");
+		printf("  Dosen: Suhariningsih, S.ST., M.T.\n");
+		printf("  ----------------------------------------------------------------------\n");
 		printf("\n");
 		printf("  Persamaan kuadrat: -2X^2 - 6X + 8.\n");
 		printf("\n");

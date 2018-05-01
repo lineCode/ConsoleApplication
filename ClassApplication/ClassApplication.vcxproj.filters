@@ -9,13 +9,6 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
-    <Filter Include="Resource Files\layout">
-      <UniqueIdentifier>{8b629d4b-44ec-40b8-ac83-c128f4318457}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\kasir">
       <UniqueIdentifier>{6d77bce7-8695-40d6-8fe4-427725c28db2}</UniqueIdentifier>
     </Filter>
@@ -25,6 +18,12 @@
     <Filter Include="Source Files\bigProgram">
       <UniqueIdentifier>{5a96fc9b-781e-4a23-bb6e-70b1cb7c3649}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\bigProgram\programAkar">
+      <UniqueIdentifier>{2d7f4bbb-b742-4761-8dcb-5720bd35173d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\bigProgram\programIntegrasi">
+      <UniqueIdentifier>{ba49cd0d-2356-41c5-8cc4-7f31f08224ce}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\gerakSatelit.cpp">
@@ -33,35 +32,36 @@
     <ClCompile Include="src\bigProgram\bigProgram.cpp">
       <Filter>Source Files\bigProgram</Filter>
     </ClCompile>
-    <ClCompile Include="src\kasir\kasir-custom.cpp">
-      <Filter>Source Files\kasir</Filter>
-    </ClCompile>
     <ClCompile Include="src\experimental\experimental.cpp">
       <Filter>Source Files\experimental</Filter>
     </ClCompile>
-    <ClCompile Include="res\layout\biseksi">
-      <Filter>Resource Files\layout</Filter>
+    <ClCompile Include="src\bigProgram\programAkar\biseksi.cpp">
+      <Filter>Source Files\bigProgram\programAkar</Filter>
     </ClCompile>
-    <ClCompile Include="src\bigProgram\biseksi.cpp">
-      <Filter>Source Files\bigProgram</Filter>
+    <ClCompile Include="src\bigProgram\programAkar\regulaFalsi.cpp">
+      <Filter>Source Files\bigProgram\programAkar</Filter>
     </ClCompile>
-    <ClCompile Include="src\bigProgram\regulaFalsi.cpp">
-      <Filter>Source Files\bigProgram</Filter>
+    <ClCompile Include="src\bigProgram\programAkar\newtonRaphson.cpp">
+      <Filter>Source Files\bigProgram\programAkar</Filter>
     </ClCompile>
-    <ClCompile Include="src\bigProgram\regulaFalsi-rizal.cpp">
-      <Filter>Source Files\bigProgram</Filter>
+    <ClCompile Include="src\bigProgram\programIntegrasi\trapezoidal.cpp">
+      <Filter>Source Files\bigProgram\programIntegrasi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\kasir\kasir.cpp">
+      <Filter>Source Files\kasir</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bigProgram\programIntegrasi\simpson13.cpp">
+      <Filter>Source Files\bigProgram\programIntegrasi</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="res\layout\kasir-custom">
-      <Filter>Resource Files\layout</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="header\gotoxy-mod.h">
+    <ClInclude Include="header\gotoxy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="header\gotoxy.h">
+    <ClInclude Include="header\gotoxy-custom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="header\getxy-custom.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
